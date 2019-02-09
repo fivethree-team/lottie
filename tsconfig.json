@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "lottie": [
+        "dist/lottie"
+      ],
+      "lottie/*": [
+        "dist/lottie/*"
+      ]
+    }
   }
 }

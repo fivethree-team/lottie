@@ -1,4 +1,6 @@
+import { LottieAnimation } from './../components/lottie/lottie.component';
 import { Component } from '@angular/core';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  onAnimationCreated(animation: LottieAnimation) {
+    animation.play('h');
+
+    timer(1000).subscribe(() => animation.pause('h'));
+  }
 }
