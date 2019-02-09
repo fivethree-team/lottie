@@ -5,10 +5,13 @@ import {
   ElementRef,
   Output,
   EventEmitter,
-  Input
+  Input,
+  PLATFORM_ID,
+  Inject
 } from '@angular/core';
 import * as lottie from 'lottie-web';
 import { LottieParams, LottieAnimation } from './symbols';
+import { isPlatformServer } from '@angular/common';
 
 @Component({
   selector: 'fiv-lottie',
@@ -33,9 +36,11 @@ export class LottieComponent implements OnInit {
 
   private _params: LottieParams;
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId: string) { }
 
   ngOnInit() {
+    if (isPlatformServer(this.platformId)) { return; }
+
     this._params = {
       autoplay: this.params.autoplay,
       animationData: this.params.animationData,
