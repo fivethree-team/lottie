@@ -7,8 +7,18 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
-    <fiv-lottie [params]="lottieParams" [width]="250" [height]="250" (animationCreated)=onAnimationCreated($event)>
-    </fiv-lottie>
-  </ion-card>
+  <fiv-lottie [params]="lottieParams" [width]="250" [height]="250" (animationCreated)=onAnimationCreated($event)>
+  </fiv-lottie>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <fiv-lottie [params]="lottieParams" [width]="250" [height]="250"
+            (animationCreated)=onAnimationCreated($event)>
+          </fiv-lottie>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
