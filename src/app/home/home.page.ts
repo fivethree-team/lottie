@@ -1,6 +1,6 @@
-import { LottieAnimation } from './../components/lottie/lottie.component';
 import { Component } from '@angular/core';
 import { timer } from 'rxjs';
+import { LottieAnimation, LottieParams } from '@fivethree/lottie';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +9,17 @@ import { timer } from 'rxjs';
 })
 export class HomePage {
 
-  onAnimationCreated(animation: LottieAnimation) {
-    animation.play('h');
+  lottieParams: LottieParams = {
+    path: 'assets/lottie/empty_box.json',
+    renderer: 'canvas',
+    // autoplay: true,
+    loop: true
+  };
 
-    timer(1000).subscribe(() => animation.pause('h'));
+  onAnimationCreated(animation: LottieAnimation) {
+    animation.play();
+    animation.setSpeed(0.8);
+
+    timer(1000).subscribe(() => animation.pause());
   }
 }

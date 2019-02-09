@@ -18,11 +18,8 @@
       "dom"
     ],
     "paths": {
-      "lottie": [
-        "dist/lottie"
-      ],
-      "lottie/*": [
-        "dist/lottie/*"
+      "@fivethree/lottie": [
+        "dist/@fivethree/lottie"
       ]
     }
   }

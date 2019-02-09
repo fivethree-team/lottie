@@ -7,5 +7,8 @@
 </ion-header>
 
 <ion-content padding>
-  <app-lottie (animationCreated)=onAnimationCreated($event)></app-lottie>
+  <ion-card>
+    <fiv-lottie [params]="lottieParams" [width]="250" [height]="250" (animationCreated)=onAnimationCreated($event)>
+    </fiv-lottie>
+  </ion-card>
 </ion-content>
