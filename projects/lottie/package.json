@@ -1,6 +1,23 @@
 {
   "name": "@fivethree/lottie",
   "version": "0.0.1",
+  "description": "Lottie Animation Component",
+  "keywords": [
+    "lottie",
+    "angular",
+    "ionic",
+    "animation",
+    "component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fivethree-team/lottie.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/fivethree-team/lottie#readme",
+  "bugs": {
+    "url": "https://github.com/fivethree-team/lottie/issues"
+  },
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0",

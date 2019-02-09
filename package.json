@@ -2,17 +2,34 @@
   "name": "lottie",
   "version": "0.0.1",
   "author": "Marc Stammerjohann",
-  "description": "Lottie Component",
-  "homepage": "https://fivethree.io/",
+  "description": "Lottie Animation Component",
+  "keywords": [
+    "lottie",
+    "angular",
+    "ionic",
+    "animation",
+    "component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fivethree-team/lottie.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/fivethree-team/lottie#readme",
+  "bugs": {
+    "url": "https://github.com/fivethree-team/lottie/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "plugin:build": "ng build lottie",
+    "plugin:prod": "ng build lottie --prod && cp README.md dist/@fivethree/lottie/.",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
-  "private": true,
   "dependencies": {
     "@angular/common": "7.2.4",
     "@angular/core": "7.2.4",

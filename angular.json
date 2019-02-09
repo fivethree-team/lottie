@@ -196,6 +196,11 @@
           "options": {
             "tsConfig": "projects/lottie/tsconfig.lib.json",
             "project": "projects/lottie/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/lottie/ng-package.prod.json"
+            }
           }
         },
         "test": {
