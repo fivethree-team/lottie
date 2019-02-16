@@ -18,9 +18,11 @@
   "bugs": {
     "url": "https://github.com/fivethree-team/lottie/issues"
   },
+  "dependencies": {
+  },
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0",
-    "lottie-web": "^5.4.3"
+    "lottie-web": "^5.4.4"
   }
 }

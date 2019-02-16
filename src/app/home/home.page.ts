@@ -12,14 +12,14 @@ export class HomePage {
   lottieParams: LottieParams = {
     path: 'assets/lottie/empty_box.json',
     renderer: 'canvas',
-    // autoplay: true,
-    loop: true
+    autoplay: true,
+    loop: false
   };
 
   onAnimationCreated(animation: LottieAnimation) {
-    animation.play();
-    animation.setSpeed(0.8);
+    // animation.play();
+    // animation.setSpeed(0.8);
 
-    timer(1000).subscribe(() => animation.pause());
+    // timer(1000).subscribe(() => animation.pause());
   }
 }
