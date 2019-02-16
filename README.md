@@ -8,10 +8,10 @@ Lottie Animation Component for Angular 7 or higher.
 ## 📦 Installation
 
 ```console
-npm install @fivethree/lottie --save
+npm install @fivethree/lottie lottie-web --save
 
 # or if you are using yarn
-yarn add @fivethree/lottie
+yarn add @fivethree/lottie lottie-web
 ```
 
 ## 🔨 Usage
