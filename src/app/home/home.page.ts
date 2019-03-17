@@ -11,7 +11,7 @@ export class HomePage {
 
   lottieParams: LottieParams = {
     path: 'assets/lottie/empty_box.json',
-    renderer: 'canvas',
+    renderer: 'svg',
     autoplay: true,
     loop: false
   };
