@@ -1,3 +1,10 @@
+# [0.1.0](https://github.com/fivethree-team/lottie/compare/v0.0.3...v0.1.0) (2019-04-01)
+
+### Features
+
+* **lottie:** wait until animation has been loaded into the DOM
+
+
 ## 0.0.2 (2019-02-09)
 
 
