@@ -57,7 +57,9 @@ export class LottieComponent implements OnInit {
     this.viewWidth = this.width + 'px' || '100%';
     this.viewHeight = this.height + 'px' || '100%';
 
-    this.animationCreated.emit(animation);
+    animation.addEventListener('DOMLoaded', () => {
+      this.animationCreated.emit(animation);
+    });
   }
 
 }
