@@ -16,13 +16,19 @@ import { isPlatformServer } from '@angular/common';
 @Component({
   selector: 'fiv-lottie',
   template: `
-    <div #lottieContainer [ngStyle]="{'width': viewWidth, 'height': viewHeight, 'overflow':'hidden', 'margin': '0 auto'}">
-    </div>
+    <div
+      #lottieContainer
+      [ngStyle]="{
+        width: viewWidth,
+        height: viewHeight,
+        overflow: 'hidden',
+        margin: '0 auto'
+      }"
+    ></div>
   `,
   styles: []
 })
 export class LottieComponent implements OnInit {
-
   @Input() params: LottieParams;
   @Input() width: number;
   @Input() height: number;
@@ -36,10 +42,12 @@ export class LottieComponent implements OnInit {
 
   private _params: LottieParams;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: string) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: string) {}
 
   ngOnInit() {
-    if (isPlatformServer(this.platformId)) { return; }
+    if (isPlatformServer(this.platformId)) {
+      return;
+    }
 
     this._params = {
       autoplay: this.params.autoplay,
@@ -61,5 +69,4 @@ export class LottieComponent implements OnInit {
       this.animationCreated.emit(animation);
     });
   }
-
 }

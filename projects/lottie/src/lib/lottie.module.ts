@@ -7,4 +7,4 @@ import { LottieComponent } from './lottie.component';
   imports: [CommonModule],
   exports: [LottieComponent]
 })
-export class LottieModule { }
+export class LottieModule {}

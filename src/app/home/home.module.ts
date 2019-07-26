@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -23,4 +22,4 @@ import { LottieModule } from '@fivethree/lottie';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule { }
+export class HomePageModule {}
