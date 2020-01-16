@@ -3,7 +3,12 @@
 [![npm version](https://badge.fury.io/js/%40fivethree%2Flottie.svg)](https://www.npmjs.com/@fivethree/lottie)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/fivethree-team/lottie/blob/master/LICENSE)
 
-Lottie Animation Component for Angular 7 or higher.
+Lottie Animation Component for Angular 8 or higher.
+
+| Angular | @fivehtree/core |
+| ------- | --------------- |
+| 8/9     | 0.3.x+          |
+| 7       | 0.2.x           |
 
 ## 📦 Installation
 
@@ -15,6 +20,7 @@ yarn add @fivethree/lottie lottie-web
 ```
 
 ## 🔨 Usage
+
 Import the module into your root application module:
 
 ```typescript
@@ -22,9 +28,7 @@ import { NgModule } from '@angular/core';
 import { LottieModule } from '@fivethree/lottie';
 
 @NgModule({
-    imports: [
-        LottieModule
-    ]
+  imports: [LottieModule]
 })
 export class AppModule {}
 ```
@@ -34,7 +38,12 @@ export class AppModule {}
 Add the lottie component to your template:
 
 ```html
-<fiv-lottie [params]="lottieParams" [width]="250" [height]="250" (animationCreated)=onAnimationCreated($event)></fiv-lottie>
+<fiv-lottie
+  [params]="lottieParams"
+  [width]="250"
+  [height]="250"
+  (animationCreated)="onAnimationCreated($event)"
+></fiv-lottie>
 ```
 
 You need to setup the `lottieParams` in your component:
@@ -46,10 +55,9 @@ import { LottieAnimation, LottieParams } from '@fivethree/lottie';
 Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  styleUrls: ['home.page.scss']
 })
 export class HomePage {
-
   lottieParams: LottieParams = {
     path: 'assets/lottie/empty_box.json',
     renderer: 'canvas',

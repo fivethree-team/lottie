@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/fivethree-team/lottie/compare/v0.1.0...v0.3.0) (2020-01-16)
+
+
+### Features
+
+* **ng:** support angular 9 ([1dd860d](https://github.com/fivethree-team/lottie/commit/1dd860d5fc39f5ff03ba8c0b11b33535703c34d7))
+
+
+
 # [0.2.0](https://github.com/fivethree-team/lottie/compare/v0.1.0...v0.2.0) (2019-07-26)
 
 
