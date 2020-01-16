@@ -35,7 +35,7 @@ export class LottieComponent implements OnInit {
 
   @Output() animationCreated = new EventEmitter<LottieAnimation>();
 
-  @ViewChild('lottieContainer') lottieContainer: ElementRef;
+  @ViewChild('lottieContainer', { static: true }) lottieContainer: ElementRef;
 
   public viewWidth: string;
   public viewHeight: string;
